@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #D9EEE1;
+
+}
+
+.main {
+    background-color: #282a35;
+    height: 400px;
+
+}
+
+/* start of nav bar content */
+
+nav {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav li:hover {
+    background: green;
+    color: whitesmoke;
+
+}
+
+.fa-solid:hover {
+    color: green;
+}
+
+.logo {
+    flex: 0.2;
+}
+
+.nav-items {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    flex: 4.8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.icon {
+    flex: 1.5;
+
+
+}
+
+.btn-group {
+    flex: 3.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 150px;
+    padding: 1rem 0rem;
+
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+.one {
+    background-color: #FFC0C7;
+}
+
+.two {
+    background-color: #FFF4A3;
+}
+
+.three {
+    background-color: #04AA6D;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* end of nav bar */
+
+/* start of slider section */
+
+.slider {
+   
+    text-align: center;
+
+}
+
+.content {
+  align-items: center; 
+  padding-top: 3rem;
+  
+}
+
+.content h1 {
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.content p {
+    color: #FFC0C7;
+    font-weight: 700;
+    margin-top: 20px !important;
+    font-size: 23px;
+}
+
+.search {
+    border: none;
+    width: 450px;
+    text-align: center;
+    border-spacing: 0;
+    margin: auto;
+    display: flex;
+
+}
+
+.input {
+    padding: 1rem;
+    border: none;
+    width: 400px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0%;
+
+
+
+}
+
+.fa-search {
+    color: white;
+    background-color: green;
+    border-radius: 20%;
+    padding: 1rem;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 30px;
+    width: 100px;
+
+
+}
+
+.Slider,
+h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.second_color {
+    background-color: #D9EEE1;
+    height: 500px;
+}
+
+.onehtml {
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+/* end of slider section */
+
+
+/* start of html\css\javascript\python\sql */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.html {
+
+    padding-top: 5rem;
+    padding-left: 7rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex: 5;
+
+
+}
+
+.html_1 {
+
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: -18px !important;
+    flex: 1;
+}
+
+.html_2 {
+    font-size: 18px;
+}
+
+
+.html_reference {
+    background-color: #282A35;
+    color: whitesmoke;
+}
+
+.btn2 {
+    width: 200px;
+    padding: 0.7rem 0rem;
+    display: block;
+    border-radius: 25px;
+    font-weight: bolder;
+    margin-top: 1rem;
+
+}
+
+
+.HTMLEXAMPLE {
+    background-color: #E7E9EB;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+    border-radius: 5px;
+    flex: 5;
+    margin-top: 3rem;
+    margin-right: 3rem;
+
+
+}
+
+h3 {
+    font-weight: 400;
+    margin: 5px 2px;
+}
+
+.onehtml_1 {
+    background-color: whitesmoke;
+    border-left: 4px solid green;
+    width: 80%;
+    padding: 1.5rem;
+
+}
+
+.tryityourself {
+    background-color: #04AA6D;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: black;
+    width: 200px;
+
+}
+
+.tryityourself,
+a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+
+.css {
+    background-color: #FFF4A3;
+}
+
+.example {
+    height: 350px;
+}
+
+.btn2 .html_reference {
+    background-color: white;
+    color: #282a35;
+
+}
+
+.javascript {
+    background-color: #282A35;
+    
+}
+
+.python1 {
+    background-color: #F3ECEA;
+}
+
+.python {
+    background-color: #FFC0C7;
+}
+
+.sql {
+    background-color: #96D4D4;
+   
+}
+
+/* end of html \css\javaScript\python\sql */
+
+/* start of box part section */
+
+.boxpart {
+    background-color: #282A35;
+
+
+
+}
+
+.boxpart h2 {
+    color: black;
+    text-decoration: none;
+
+
+}
+
+.bootstrap {
+    background-color: #E7E9EB;
+}
+
+.newcolor {
+    background-color: #D9EEE1;
+
+}
+
+.boxes {
+    height: 200px;
+    border-radius: 10px;
+    margin: 4rem;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+
+}
+
+.small {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+.smallbtn {
+    margin: 3rem 0 0 11rem !important;
+}
+
+
+.smallbox_1 {
+    text-align: center;
+    flex: 1;
+    display: flex;
+
+
+
+}
+
+.c {
+    width: 600px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: large;
+
+
+}
+
+.smallbox_2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex: 2;
+    margin-top: 1rem;
+
+}
+
+.smallone {
+    flex: 1;
+    height: 100px;
+    width: 120px;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+/* end of box part section */
+
+/* start of grapics section */
+.codeeditor {
+    text-align: center;
+    padding: 2rem;
+    color: #E7E9EB;
+
+}
+
+.codeeditor h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.codeeditor p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.codetwo {
+    margin: auto;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.graphics {
+    background-color: #E7E9EB;
+    width: 800px;
+    height: 300px;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+.codebtn button {
+    width: 300px !important;
+    border-radius: 5px;
+
+}
+
+.workspace {
+    margin-top: 10rem;
+}
+
+.linktag {
+    text-decoration: underline;
+    color: #FFC0C7;
+}
+
+.howtowork {
+    text-align: center;
+
+}
+
+.howtowork h2 {
+    color: whitesmoke;
+}
+
+.icons1 {
+    background-color: #282a35;
+    height: 200px;
+    width: 500px;
+}
+
+
+
+/* end of small boxc and graphics section */
+
+/* start of discription section */
+.newsection1 {
+
+    margin: auto !important;
+    padding: 5rem;
+
+}
+
+.newsection1 h1 {
+
+    font-size: 2rem;
+}
+
+.webtemplateimg{
+    width: 700px;
+    height: 300px;
+  
+}
+
+
+
+.prouser {
+    text-align: center;
+    color: #F3ECEA;
+}
+
+.nsection {
+    background-color: #96D4D4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.jsection {
+    background-color: #282a35;
+}
+
+.smallbox_3 {
+    text-align: center;
+    flex: 1;
+    display: flex;
+
+
+}
+.smallbox_3{
+    display: flex;
+    flex-wrap:wrap;
+}
+.exercises{
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 2rem; 
+    padding: 4rem;
+    font-size: large;
+    background-color: #04AA6D;
+
+}
+.quizzes{
+    background-color: #FFF4A3;
+    color: #282A35;
+}
+ .smallbtn .browser{
+    width: 600px !important;
+    margin: auto !important;
+}
+.btnsmall{
+    width: 400px !important;
+    margin-left: 9rem;
+}
+.hero{
+    align-items: center !important;
+}
+
+.browse{
+    text-align: center !important;
+}
+.browse h1{
+font-size: 3rem;
+margin: 2rem;
+}
+.browse p{
+    font-size: larger;
+
+}
+
+
+.kick{
+    color: #FFC0C7;
+    margin: 3rem;
+    font-size: 3rem;
+}
+.nbtn{
+   float: left !important;
+}
+
+.lastsection{
+    width: 100% !important;
+    margin: 0rem !important;
+    
+}
+
+/* end of discription section */
+
+/* start of footer section */
+
+.footer{
+    background-color: #282A35;
+   
+    border-collapse: collapse;
+
+}
+.footerbtn{
+    margin: 1rem;
+    padding: 2rem;
+   
+}
+.footerp{
+    color: whitesmoke;
+    margin: 1rem;
+}
+.btnfoter{
+    width: 100px;
+    height: 50px;
+    margin: 1rem;
+}
+.footerright{
+    float: right;
+    margin: 1rem;
+}
+
+.footericon{
+  
+   
+    float: right;
+}
+
+ .icn{
+    padding: 1rem;
+    color: white;
+    
+ }
+.footerp{
+font-style: italic;
+
+}
+.likeicon{
+    color: white;
+    font-size: 3rem;
+   text-align: center;
+   
+   padding: 5rem;
+}
+
+/* end of footer section */

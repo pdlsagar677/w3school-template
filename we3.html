@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3School Online Web Tutorial</title>
+    <link rel="stylesheet" href="./assets/css/w3.css">
+    <link rel="icon" href="assets/img/w3.png">
+    <script src="https://kit.fontawesome.com/06b7f0bd2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- This is a pracitse project as a copy layout homepage of w3school website ss  -->
+
+
+
+    <!-- strat of main part -->
+    <div class="main">
+
+
+
+        <!-- navar-->
+
+        <nav class="navbar">
+            <ul class="logo">
+                <img src="data:image/png;base64,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"
+                    alt="" width="40" height="40">
+            </ul>
+            <ul class="nav-items">
+                <li>Tutorial <i class="fa-solid fa-caret-down"></i></li>
+                <li>Reference <i class="fa-solid fa-caret-down"></i></li>
+                <li>Exercises <i class="fa-solid fa-caret-down"></i></li>
+                <li>Videos</li>
+            </ul>
+            <ul class="icons">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </ul>
+            <ul class="btn-group">
+                <button class="btn one">Get Certified</button>
+                <button class="btn two">Create Website</button>
+                <button class="btn three">Log in </button>
+            </ul>
+        </nav>
+        <!-- navar-->
+
+        <div class="slider">
+            <div class="content">
+                <h1>Learn to Code</h1>
+                <p>With the world's largest web developer site.</p>
+                <br>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Search our tutorial,e.g.HTML">
+                    <div class="search_btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                </div>
+                <br>
+                <h2>
+                    <a href="#"></a>Not Sure Where To Begin?
+                </h2>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of nav or main part -->
+
+
+
+    <svg style="background-color:#D9EEE1;" width="100%" height="70" viewbox="0 0 100 100" preserveAspectRatio="none">
+
+        <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" />
+    </svg>
+    </div>
+
+
+
+
+    <!-- start of html section-->
+    <section>
+        <div class="wrapper">
+            <div class=" html">
+
+                <h1 class="html_1">HTML</h1>
+
+                <h4 class="html_2">The language for building web pages</h4>
+
+                <button class="btn2 three">Learn HTML </button>
+
+                <button class="btn2 two">Video Tutorial</button>
+
+                <button class="btn2 html_reference">HTML Reference</button>
+
+                <button class="btn2 one">Get Certified</button>
+            </div>
+
+
+            <div class="HTMLEXAMPLE">
+
+
+
+                <h3>HTML Example:</h3>
+                <div class="onehtml_1">
+                    <div class="w3-code htmlHigh notranslate green-border" style="height:300px">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor"
+                                style="color:red">
+                                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>This is a paragraph.<span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>
+                    </div>
+                </div>
+                <button class="tryityourself">
+                    <a href="#">Try it Yourself</a></button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end of html section-->
+
+
+
+    <!-- start of css section-->
+    <section>
+        <div class="wrapper css">
+            <div class=" html">
+
+                <h1 class="html_1">CSS</h1>
+
+                <h4 class="html_2">The language for styling web pages</h4>
+
+                <button class="btn2 three">Learn CSS </button>
+
+
+
+                <button class="btn2 html_reference">CSS Reference</button>
+
+                <button class="btn2 one">Get Certified</button>
+            </div>
+
+
+            <div class="HTMLEXAMPLE">
+
+
+
+                <h3>CSS Example:</h3>
+                <div class="onehtml_1">
+
+                    <h3>CSS Example:</h3>
+                    <div class="w3-code cssHigh notranslate green-border"><span class="cssselectorcolor"
+                            style="color:brown">
+                            body <span class="cssdelimitercolor" style="color:black">{</span><span
+                                class="csspropertycolor" style="color:red"><br>
+                                &nbsp; background-color<span class="csspropertyvaluecolor"
+                                    style="color:mediumblue"><span class="cssdelimitercolor"
+                                        style="color:black">:</span> lightblue<span class="cssdelimitercolor"
+                                        style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                                style="color:black">}</span><br><br>
+                            h1 <span class="cssdelimitercolor" style="color:black">{</span><span
+                                class="csspropertycolor" style="color:red"><br>
+                                &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                        class="cssdelimitercolor" style="color:black">:</span> white<span
+                                        class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                &nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                        class="cssdelimitercolor" style="color:black">:</span> center<span
+                                        class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                                class="cssdelimitercolor" style="color:black">}</span><br><br>p <span
+                                class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                                style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                                    style="color:mediumblue"><span class="cssdelimitercolor"
+                                        style="color:black">:</span> verdana<span class="cssdelimitercolor"
+                                        style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                                style="color:black">}</span></span></div>
+
+                </div>
+                <button class="tryityourself">
+                    <a href="#">Try it Yourself</a></button>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!--end of css section-->
+
+
+
+    <!--start of javascript section-->
+    <section>
+        <div class="wrapper javascript">
+            <div class=" html">
+
+                <h1 class="html_1" style="color:white">javascript</h1>
+
+                <h4 class="html_2" style="color:white">The language for programming web pages</h4>
+
+                <button class="btn2 three">Learn JavaScript </button>
+
+
+                <button class="btn2 html_reference">JavaScript Reference</button>
+
+                <button class="btn2 one">Get Certified</button>
+            </div>
+
+            <div class="HTMLEXAMPLE example">
+                <h3>JavaScript Example:</h3>
+                <div class="onehtml_1">
+
+                    <div class="htmlHigh">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>button<span class="attributecolor"
+                                style="color:red"> onclick<span class="attributevaluecolor"
+                                    style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>Click Me!<span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><span class="jscolor"
+                            style="color:black"><br>
+                            <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction()
+                            {<br><span class="jsnumbercolor" style="color:red">
+                            </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">let</span> x =
+                            document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                                class="jsstringcolor" style="color:brown">"demo"</span>);<br><span class="jsnumbercolor"
+                                style="color:red">
+                            </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span
+                                class="jspropertycolor" style="color:black">fontSize</span> = <span
+                                class="jsstringcolor" style="color:brown">"25px"</span>; <br><span class="jsnumbercolor"
+                                style="color:red">
+                            </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span
+                                class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor"
+                                style="color:brown">"red"</span>; <br>}<br>
+                        </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>
+                    </div>
+                </div>
+                <button class="tryityourself">
+                    <a href="#">Try it Yourself</a></button>
+            </div>
+        </div>
+
+    </section>
+    <!--end of javascript section-->
+
+
+
+    <!--start of python section-->
+    <section>
+        <div class="wrapper python1">
+            <div class=" html">
+
+                <h1 class="html_1">Python</h1>
+
+                <h4 class="html_2">A popular programming language</h4>
+
+                <button class="btn2 three">Learn Python </button>
+
+
+
+                <button class="btn2 html_reference">Python Reference</button>
+
+                <button class="btn2 one">Get Certified</button>
+            </div>
+
+
+            <div class="HTMLEXAMPLE example">
+
+
+
+                <h3>Python Example:</h3>
+                <div class="onehtml_1">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">if</span> <span
+                            class="jsnumbercolor" style="color:red">5</span> &gt; <span class="jsnumbercolor"
+                            style="color:red">2</span>:<br>&nbsp; print(<span class="jsstringcolor"
+                            style="color:brown">"Five is greater than two!"</span>)<span class="jsnumbercolor"
+                            style="color:red">
+                        </span> </span>
+                </div>
+                <br><br><br><br><br>
+                <button class="tryityourself">
+                    <a href="#">Try it Yourself</a></button>
+            </div>
+
+        </div>
+
+    </section>
+    <!--end of python section-->
+
+
+
+    <!--start of sql section-->
+    <section>
+        <div class="wrapper sql">
+            <div class=" html">
+
+                <h1 class="html_1">SQL</h1>
+
+                <h4 class="html_2">SQL
+
+                    A language for accessing databases</h4>
+
+                <button class="btn2 three">Learn SQL</button>
+
+
+
+                <button class="btn2 html_reference">SQL Reference</button>
+
+                <button class="btn2 one">Get Certified</button>
+            </div>
+
+
+            <div class="HTMLEXAMPLE example">
+
+
+
+                <h3>SQL Example:</h3>
+                <div class="onehtml_1">
+                    <span class="sqlcolor" style="color:black"><span class="sqlnumbercolor" style="color:">
+                        </span> <span class="sqlkeywordcolor" style="color:mediumblue">SELECT</span> * <span
+                            class="sqlkeywordcolor" style="color:mediumblue">FROM</span> Customers<br><span
+                            class="sqlnumbercolor" style="color:">
+                        </span> <span class="sqlkeywordcolor" style="color:mediumblue">WHERE</span> Country=<span
+                            class="sqlstringcolor" style="color:brown">'Mexico'</span>;<span class="sqlnumbercolor"
+                            style="color:">
+                        </span> </span>
+                </div>
+                <button class="tryityourself">
+                    <a href="#">Try it Yourself</a></button>
+            </div>
+
+        </div>
+
+    </section>
+    <!--end of sql section-->
+
+
+
+    <!-- start of small box and graphics section -->
+    <section>
+        <div class="boxpart">
+            <div class="small box">
+
+                <div class="  python boxes">
+                    <h2>Php</h2>
+                    <br>
+                    <h3>A web server programming language</h3>
+                    <div class="smallbtn">
+                        <button class="btn2 html_reference">learn php</button>
+                    </div>
+                </div>
+                <div class="  css boxes">
+                    <h2>jquery</h2>
+
+
+                    <br>
+                    <h3>A js library for devolping library function</h3>
+                    <div class="smallbtn">
+                        <button class="btn2 html_reference box-button">learn jquery</button>
+                    </div>
+                </div>
+            </div>
+            <div class="small box">
+                <div class="  bootstrap boxes">
+                    <h2>java</h2>
+                    <br>
+                    <h3>A programming language</h3>
+                    <div class="smallbtn">
+                        <button class="btn2 html_reference">learn java</button>
+
+                    </div>
+                </div>
+                <div class="  newcolor boxes">
+                    <h2>c++</h2>
+                    <br>
+                    <h3>A programming language</h3>
+                    <div class="smallbtn">
+                        <button class="btn2 html_reference ">learn c++</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="small box">
+                <div class="  sql boxes ">
+                    <h2>w3.css</h2>
+                    <br>
+                    <h3>A CSS framework for faster and better responsive web pages</h3>
+                    <div class="smallbtn">
+                        <button class="btn2 html_reference">learn w3.css</button>
+
+                    </div>
+                </div>
+                <div class="  bootstrap boxes">
+                    <h2>Bootstrap</h2>
+                    <br>
+                    <h3>A CSS framework for designing better web pages</h3>
+                    <div class="smallbtn">
+                        <button class="btn2 html_reference">learn bootstrap</button>
+                    </div>
+                </div>
+            </div>
+            <div class="smallbox_1">
+                <div class="c python">
+                    <h4>C</h4>
+                </div>
+                <div class="c css">
+                    <h4>C#</h4>
+                </div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone python1">R</div>
+                <div class="smallone newcolor">Kotlin</div>
+                <div class="smallone sql">Node.js</div>
+                <div class="smallone python">React</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone css">JOSN</div>
+                <div class="smallone python1">Angular JS</div>
+                <div class="smallone  newcolor">My Sql</div>
+                <div class="smallone sql">XML</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone python">Saas</div>
+                <div class="smallone css">Icons</div>
+                <div class="smallone python1">RWD</div>
+                <div class="smallone  newcolor">Graphis</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone sql">SVG</div>
+                <div class="smallone  python">Canvas</div>
+                <div class="smallone css">Raspberry Pi</div>
+                <div class="smallone python1">Cyber Security</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone  newcolor">Colors</div>
+                <div class="smallone sql">Git</div>
+                <div class="smallone python">Matplotib</div>
+                <div class="smallone css">NumPy</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone python1">Pandas</div>
+                <div class="smallone newcolor">SciPy</div>
+                <div class="smallone sql">ASP</div>
+                <div class="smallone python">Accessbility</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone css">AppML</div>
+                <div class="smallone python1">GO</div>
+                <div class="smallone   newcolor">TypeScript</div>
+                <div class="smallone sql">Django</div>
+            </div>
+            <div class="smallbox_2">
+                <div class="smallone python">MonogDB</div>
+                <div class="smallone css">Statistic</div>
+                <div class="smallone python1">Data Science</div>
+                <div class="smallone  newcolor">Typing Speeed</div>
+            </div>
+            <div class="smallbox_1">
+                <div class="c sql">
+                    <h4>Excel</h4>
+                </div>
+                <div class="c css">
+                    <h4>Google Sheet</h4>
+                </div>
+            </div>
+            <div class="smallbox_1">
+                <div class="c python">
+                    <h4>Machine Learning</h4>
+                </div>
+                <div class="c python1">
+                    <h4>Artificial Intelligence</h4>
+                </div>
+            </div>
+            <!-- end of small boxes section -->
+            <section>
+                <div class="codeeditor">
+
+                    <h1>
+                        Code Editor
+                    </h1>
+
+                    <p>With our online code editor, you can edit code and view the result in your browser</p>
+                    <br>
+                    <div class="codetwo">
+                        <div class="graphics">
+
+                            <img src="assets/img/codeeditor.gif" alt="">
+                        </div>
+                        <div class="codebtn">
+                            <button class="btn2 three">Try Frontend Editor (HTML/CSS/JS) </button>
+                            <button class="btn2 two">Try Backend Editor (Python/PHP/Java/C..</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="codeeditor workspace">
+
+                    <h1>
+                        W3Schools Spaces</h1>
+
+                    <p>If you want to create your own website, check out <a class="linktag" href="#">w3workspace</a>
+                    </p>
+                    <p>It is free to use, and does not require any setup:</p>
+                    <br>
+                    <div class="codetwo">
+                        <div>
+
+                            <img src="/assets/img/dynamicspaces.gif" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br><br><br>
+                <div class="howtowork">
+
+
+                    <img src="assets/img/how-spaces-works3.png" alt="">
+                    <div class="learn">
+                        <button class="tryityourself  ">
+                            <a href="#">Learn More</a></button>
+                    </div>
+                </div>
+
+
+        </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- end of small box and graphics section -->
+
+    <!-- start of mylearniong section -->
+    <section>
+        <div class="wrapper">
+            <div style="color:black" class="  newsection1  prouser">
+                <h1>
+                    <th> My Learning</th>
+                </h1>
+
+
+                <p>Track your progress with our free "My Learning" program.</p>
+                <br>
+                <p>Log in to your account, and start earning points!</p>
+
+                <img src="assets/img/myl-green-off.png" alt="">
+
+                <div>
+                    <button class="tryityourself  ">
+                        <a href="#">Sign up for free</a></button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of my learning section -->
+
+
+
+    <!-- start of section -->
+    <section>
+        <div class="wrapper javascript">
+            <div class="  newsection1  prouser">
+                <h1>
+                    <th> Become a PRO User</th>
+
+                    <p> <a href="#">And unlock powerful features:</a></p>
+
+
+                    <p>
+                    <h3><i class="fa-regular fa-circle-check"></i> Browse W3Schools without ads</h3>
+
+                    </p>
+                    <p>
+                    <h3><i class="fa-regular fa-circle-check"></i> Website hosting (Includes Spaces PRO)</h3>
+
+                    </p>
+                    <p>
+                    <h3><i class="fa-regular fa-circle-check"></i> Access to our HTML Video Tutorial</h3>
+                    </p>
+
+                </h1>
+
+                <div>
+                    <button class="tryityourself  ">
+                        <a href="#">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end of section -->
+
+
+
+    <!-- start of section like python -->
+    <section>
+        <div class="wrapper python1">
+            <div class="  newsection1">
+                <h1>
+                    <th> Color Picker</th>
+                </h1>
+
+
+                <p>W3Schools' famous color picker:</p>
+                <br>
+                <div>
+                    <img src="assets/img/colorpicker.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end of section like python -->
+
+
+
+    <!-- start of section like code game -->
+    <section>
+        <div class="wrapper nsection ">
+            <div class="  newsection1">
+                <h1>
+                    <th> Code Game</th>
+                </h1>
+
+                <p>Help the Lynx collect pine cones!</p>
+                <br>
+                <div>
+                    <img src="assets/img/codegame.png" alt="">
+                </div>
+                <button class="btn2 html_reference">Play Games</button>
+            </div>
+
+
+        </div>
+        </div>
+
+    </section>
+    <!-- end of section like code game -->
+
+
+
+    <!-- start of section exercises and quizzes -->
+    <section>
+        <div class="wrapper jsection">
+            <div class="  newsection1  prouser">
+                <h1>
+                    <th>Exercises and Quizzes</th>
+
+                    <p> Test your skills!</p>
+
+                </h1>
+                <div class="smallbox_3">
+                    <div class="exercises newcolor1 ">
+                        <h4>EXERCISES</h4>
+                    </div>
+                    <div class="exercises quizzes ">
+                        <h4>QUIZZES</h4>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+    <!-- end of section like exrcises and quizzess -->
+
+
+
+    <!-- strart of web template section -->
+    <section>
+        <div class="wrapper HTMLEXAMPLE lastsection">
+            <div class="  newsection1 browse">
+                <h1>
+                    <th>Web Templates</th>
+                </h1>
+
+
+                <p>Browse our selection of free responsive HTML Templates.</p>
+
+
+
+                <br>
+                <div>
+                    <img class="webtemplateimg" src="assets/img/w3css_templates.jpg" alt="">
+                </div>
+                <br>
+            
+                <button class="btn2 html_reference box-button  browser ">Browse Template</button>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end of web template section -->
+
+
+
+    <!-- start of  kick strat your career section -->
+    <section>
+        <div class="wrapper jsection">
+            <div class="  kick ">
+                <h1>
+                    <th>Kickstart your career</th>
+                </h1>
+                <p> Get certified by completing a course</p>
+                <br>
+                <div class="nbtn">
+                    <button class="btn2 three  ">Get Started </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- end os kick start your career section -->
+
+
+
+    <!-- start of how to section -->
+    <section>
+        <div class="wrapper HTMLEXAMPLE lastsection">
+            <div class="   newsection1 browse">
+                <h1>
+                    <th>How To Section</th>
+                </h1>
+
+
+                <p>Code snippets for HTML, CSS and JavaScript</p>
+                <p>For example, how to create a slideshow:</p>
+                <br>
+
+                <div >
+
+                    <img class="webtemplateimg" src="assets/img/img_nature_wide.jpg" alt="">
+
+                </div>
+                <button class="btn2 html_reference box-button btnsmall ">Learn How To</button>
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end of how to section -->
+
+
+
+    <!-- strat of footer section -->
+
+    <section>
+        <div class=" wrapper footer">
+            <div class="footerbtn">
+                <button class="btnfoter"> QUIZZES</button>
+                <button class="btnfoter">EXERCISES</button>
+                <button class="btnfoter">CERTIFICATE</button>
+                <button class="btnfoter">UPGRDAE</button>
+                <button class="btnfoter">SPACES</button>
+                <button class="btnfoter">SUPPPORT</button>
+                <button class="btnfoter">NEWSLETTER</button>
+                <div class="footerright">
+                    <a href="#">FORUM | ABOUT</a>
+                </div>
+                <div class="footericon">
+                    <i class="fa-brands fa-facebook icn"></i>
+                    <i class="fa-brands fa-instagram  icn"></i>
+                    <i class="fa-brands fa-linkedin  icn"></i>
+                    <i class="fa-brands fa-discord  icn"></i>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="footerp">
+                <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve
+                    reading and basic understanding. Tutorials, references, and examples are constantly reviewed to
+                    avoid errors, but we cannot warrant full correctness of all content. While using this site, you
+                    agree to have read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2023 by Refsnes Data. All Rights Reserved.
+                </p>
+                <div class="likeicon">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end of footer section -->
+
+
+
+
+</body>
+
+</html>
